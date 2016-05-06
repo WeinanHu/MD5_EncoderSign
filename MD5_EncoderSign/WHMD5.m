@@ -8,7 +8,10 @@
 
 #import "WHMD5.h"
 #import <CommonCrypto/CommonDigest.h>
+@interface WHMD5()
 
+@end
+static NSMutableArray *strings;
 @implementation WHMD5
 
 
@@ -27,15 +30,24 @@
 +(NSString *)caculateMd5WithStrings:(NSString *)fistPara,...{
     va_list arguments;
     id eachObject;
+    if (!strings) {
+        strings = [NSMutableArray array];
+    }
     if (fistPara) {
         NSLog(@"%@",fistPara);
+        [strings addObject:fistPara];
         va_start(arguments, fistPara);
         
         while ((eachObject = va_arg(arguments, id))) {
             NSLog(@"%@",eachObject);
+            [strings addObject:eachObject];
         }
         va_end(arguments);
     }
+    
+    return nil;
+}
++(NSString*)caculateMd5WithArray:(NSArray*)arr{
     return nil;
 }
 @end
