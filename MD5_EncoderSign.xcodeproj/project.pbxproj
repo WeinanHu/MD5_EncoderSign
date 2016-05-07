@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B0C48DF81CDCC845005F632D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C48DF71CDCC845005F632D /* main.m */; };
 		B0C48E001CDCC97A005F632D /* WHMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C48DFF1CDCC97A005F632D /* WHMD5.m */; };
+		B0FEAC5D1CDD86FC003DA8E7 /* PaiLie.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FEAC5C1CDD86FC003DA8E7 /* PaiLie.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		B0C48DF71CDCC845005F632D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B0C48DFE1CDCC97A005F632D /* WHMD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHMD5.h; sourceTree = "<group>"; };
 		B0C48DFF1CDCC97A005F632D /* WHMD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHMD5.m; sourceTree = "<group>"; };
+		B0FEAC5B1CDD86FC003DA8E7 /* PaiLie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaiLie.h; sourceTree = "<group>"; };
+		B0FEAC5C1CDD86FC003DA8E7 /* PaiLie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaiLie.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				B0C48DF71CDCC845005F632D /* main.m */,
 				B0C48DFE1CDCC97A005F632D /* WHMD5.h */,
 				B0C48DFF1CDCC97A005F632D /* WHMD5.m */,
+				B0FEAC5B1CDD86FC003DA8E7 /* PaiLie.h */,
+				B0FEAC5C1CDD86FC003DA8E7 /* PaiLie.m */,
 			);
 			path = MD5_EncoderSign;
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0FEAC5D1CDD86FC003DA8E7 /* PaiLie.m in Sources */,
 				B0C48DF81CDCC845005F632D /* main.m in Sources */,
 				B0C48E001CDCC97A005F632D /* WHMD5.m in Sources */,
 			);

@@ -11,5 +11,6 @@
 @interface WHMD5 : NSObject
 + (NSString *)md5:(NSString *)str;
 
-+(NSString *)caculateMd5WithStrings:(NSString *)str1,...;
++(NSArray *)caculateMd5WithStrings:(NSString *)str1,...;
++(NSArray*)caculateMd5WithArray:(NSArray*)arr;
 @end

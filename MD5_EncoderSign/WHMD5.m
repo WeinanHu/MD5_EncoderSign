@@ -8,6 +8,7 @@
 
 #import "WHMD5.h"
 #import <CommonCrypto/CommonDigest.h>
+#import "PaiLie.h"
 @interface WHMD5()
 
 @end
@@ -27,27 +28,28 @@ static NSMutableArray *strings;
             result[12], result[13], result[14], result[15]
             ];
 }
-+(NSString *)caculateMd5WithStrings:(NSString *)fistPara,...{
++(NSArray *)caculateMd5WithStrings:(NSString *)fistPara,...{
     va_list arguments;
     id eachObject;
-    if (!strings) {
-        strings = [NSMutableArray array];
-    }
+    
+    NSMutableArray *mutaArr = [NSMutableArray array];
+    
     if (fistPara) {
         NSLog(@"%@",fistPara);
-        [strings addObject:fistPara];
+        [mutaArr addObject:fistPara];
         va_start(arguments, fistPara);
         
         while ((eachObject = va_arg(arguments, id))) {
             NSLog(@"%@",eachObject);
-            [strings addObject:eachObject];
+            [mutaArr addObject:eachObject];
         }
         va_end(arguments);
     }
-    
-    return nil;
+    ;
+    return [self caculateMd5WithArray:mutaArr];
 }
-+(NSString*)caculateMd5WithArray:(NSArray*)arr{
-    return nil;
++(NSArray*)caculateMd5WithArray:(NSArray*)arr{
+    return  [PaiLie getPaiLieArrayWithArray:[arr copy] withCount:arr.count];
+    
 }
 @end
